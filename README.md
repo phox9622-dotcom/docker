@@ -42,3 +42,28 @@ Digest: sha256:ff7f7cbb4545aacec2c22d085b2bc406b299c119bd98747421124a1a6c03795f
 Status: Downloaded newer image for ghcr.io/open-webui/open-webui:main
 1f31b044f2a9d2337667940809cb667f12c6837931450d46a1d4272258db6c01
 @phox9622-dotcom ➜ /workspaces/docker (main) $ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker run -d -p 3000:8080 \
+  -v open-webui:/app/backend/data \
+  -e ENABLE_OLLAMA_API=false \
+  --name open-webui \
+  --restart always \
+  ghcr.io/open-webui/open-webui:main
